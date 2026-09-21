@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'">
+
+  <meta name="description" content="Help with Littlefold albums, account saves and PDFs, and an explanation of how your information is handled.">
+  <title>Privacy — Littlefold</title>
+  <link rel="icon" href="brand/littlefold.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="shell site-header">
+    <a class="brand" href="index.html"><img src="brand/littlefold.png" alt="" width="44" height="44"><span>Littlefold</span></a>
+    <nav aria-label="Main navigation"><a href="support.html">Support</a><a href="privacy.html" aria-current="page">Privacy</a></nav>
+  </header>
+  <main id="main" class="shell" tabindex="-1"><div class="hero">
+  <p class="eyebrow">Your information</p>
+  <h1>Privacy notice</h1>
+  <p class="lead">Littlefold is a digital photo album app operated by Ali Sahin. This notice explains how the app and this website handle your information.</p>
+</div>
+<div class="reading-layout">
+  <nav class="contents" aria-label="On this page"><p>On this page</p><div>
+    <a href="#device">On your device</a><a href="#account">Accounts &amp; cloud saves</a><a href="#payments">PDF purchases</a><a href="#records">Service records</a><a href="#retention">Access &amp; retention</a><a href="#deletion">Deletion &amp; sharing</a><a href="#contact">Contact</a>
+  </div></nav>
+  <div class="prose">
+    <section id="device">
+      <h2>What stays on your device</h2>
+      <p>Littlefold receives the photos you select through the system photo picker. It stores working copies of those photos, your album text and layout, and generated PDF previews in the app’s files. It does not change the originals in your photo library.</p>
+      <p>The app automatically prepares smaller JPEG copies on your device before upload. It removes photo metadata, including embedded GPS tags, from newly prepared copies. This does not remove location information visible in a photo or written in a caption.</p>
+      <p>Creating and previewing an album does not upload its contents. Signing in, or copying a guest album into your account’s local workspace, does not upload those contents either. Littlefold does not request your contacts or device location.</p>
+      <p>Signing out removes that account’s local app files; it does not delete its saved cloud draft. Save a separate PDF to Files first if you need to keep one. The guest workspace is separate.</p>
+    </section>
+    <section id="account">
+      <h2>Accounts and cloud saves</h2>
+      <p>If you sign in with Apple or Google, the sign-in provider supplies account information such as your provider identifier, email address and, when available, name or profile information. Littlefold uses Supabase for authentication, its database and private file storage. A sign-in session is stored in your device’s Keychain.</p>
+      <p>Choosing <strong>Save draft to account</strong> sends the album’s prepared photos, title, captions, notes and layout to your account storage. These records let you reopen your work and let the service check which account can access it. Unchanged photos already stored for that album are reused when their content matches.</p>
+      <p>Your account albums are not published in a public gallery. Apple and Google handle their sign-in services under their own privacy policies.</p>
+    </section>
+    <section id="payments">
+      <h2>PDF purchases</h2>
+      <div class="note"><p>PDF purchases are not currently available. The purchase information below applies only when checkout is enabled in the app.</p></div>
+      <p>When checkout is available and you choose to continue, Littlefold uploads the finished PDF and creates an account-linked order with the file’s size and content identifier. This lets the service deliver the exact PDF you reviewed and recover an interrupted purchase. Preparing a local PDF preview alone does not do this.</p>
+      <p>Apple processes the payment. Littlefold receives transaction and product identifiers, purchase or revocation dates, and the order association needed to verify the purchase and provide the PDF. Littlefold does not receive your payment-card number.</p>
+    </section>
+    <section id="records">
+      <h2>Service records and website visits</h2>
+      <p>Supabase and its network providers process operational records that can include your IP address, approximate location derived from it, browser or app information, request paths, account identifiers, errors and timing. These records support sign-in, security, abuse prevention and troubleshooting. Approximate network location is separate from your device’s GPS location.</p>
+      <p>This website uses GitHub Pages. GitHub records visitors’ IP addresses for security. See <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection">GitHub’s explanation of this collection</a>.</p>
+      <p>Littlefold has no advertising or cross-app tracking SDK and does not use album content for advertising. These pages have no analytics scripts, contact form, external fonts or embedded media.</p>
+    </section>
+    <section id="retention">
+      <h2>Access windows are not deletion deadlines</h2>
+      <p>A saved draft is available through your account for 30 days from its first save. Editing it does not restart that period. For an enabled PDF purchase, the account download window is 30 days from purchase. A PDF you save separately to Files has no Littlefold access deadline.</p>
+      <p>Expired or deleted cloud media becomes eligible for cleanup. Unfinished uploads and photos removed from an active saved album have a grace period of at least 24 hours before they become eligible. Eligibility does not mean the bytes have already been deleted: cleanup runs in batches and retries failures.</p>
+      <p>Draft text, account records and export metadata are not all erased when an access window ends. While an account remains open, records that prevent deleted files from being restored have no automatic deletion deadline. When purchases are enabled, transaction and revocation records can also remain after access ends or an account is deleted; pending orders may be kept to resolve an interrupted payment.</p>
+      <p>Provider logs and any provider-managed backups follow separate retention arrangements. We do not promise that all copies or records are erased after 30 days. Save important work outside the app before its account access expires.</p>
+    </section>
+    <section id="deletion">
+      <h2>Deleting an account and sharing a PDF</h2>
+      <p>To delete your account, open <strong>Account → Delete account</strong> in Littlefold and confirm. The process removes the account’s active private media and account records. If a service operation fails, deletion remains pending and the app lets you retry. For an Apple-linked account, follow any sign-in or Apple authorization instructions shown by the app.</p>
+      <p>Completed account deletion also clears that account’s draft and export deletion markers. Provider security logs have their own retention arrangements. Where purchases are enabled, payment verification and revocation records can remain to prevent a transaction from being used again. Deleting an account does not erase Apple’s purchase history, cancel a pending Apple payment or request a refund.</p>
+      <p>Littlefold sends a shared PDF to the destination you choose in the system share sheet. Copies in Files, Photos, device backups or a recipient’s storage are separate from Littlefold’s account storage. You and the chosen service or recipient control those copies.</p>
+    </section>
+    <section id="contact">
+      <h2>Contact and privacy requests</h2>
+      <p>For questions about your information, an access or export request, or help deleting an account, contact Ali Sahin at <a href="mailto:alisahindev@gmail.com">alisahindev@gmail.com</a>.</p>
+      <p>If you email support, we receive your address and the information you include so we can respond. We may ask for enough account information to verify that a request is yours. Do not send passwords, sign-in codes, full payment-card details or private photos.</p>
+      <p>We will update this notice when the way Littlefold handles information changes. The effective date appears at the bottom of the published page.</p>
+    </section>
+  </div>
+</div>
+</main>
+  <footer class="shell site-footer"><p>Littlefold · Operated by Ali Sahin</p><p>Effective 21 September 2026</p></footer>
+</body>
+</html>
